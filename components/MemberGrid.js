@@ -21,11 +21,7 @@ const MemberItem = ({ children, image, nameTitle, url }) => (
         {nameTitle}
       </Heading>
       <p>{children}</p>
-      <Link
-        href={url}
-        target="_blank"
-        color={useColorModeValue("#319795", "#88ccca")}
-      >
+      <Link href={url} target="_blank">
         {url} <ExternalLinkIcon ml={1} />
       </Link>
     </Box>

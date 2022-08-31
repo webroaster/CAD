@@ -16,7 +16,7 @@ import Layout from "./layout/article";
 const Title = ({ children }) => (
   <Box>
     <NextLink href="/works">
-      <Link color={useColorModeValue("#319795", "#88ccca")}>Works</Link>
+      <Link>Works</Link>
     </NextLink>
     <span>
       &nbsp;
@@ -70,11 +70,7 @@ export const WorkItem = ({
       <List my={4}>
         <ListItem>
           <Meta>Website</Meta>
-          <Link
-            href={url}
-            target="_blank"
-            color={useColorModeValue("#319795", "#88ccca")}
-          >
+          <Link href={url} target="_blank">
             {url} <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>

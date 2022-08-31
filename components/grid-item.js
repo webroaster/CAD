@@ -64,11 +64,7 @@ export const OthersGridItem = ({ children, path, title, thumbnail }) => (
       {title}
     </Text>
     <Text fontSize={14}>{children}</Text>
-    <Link
-      href={path}
-      target="_blank"
-      color={useColorModeValue("#319795", "#88ccca")}
-    >
+    <Link href={path} target="_blank">
       {path}
       <ExternalLinkIcon ml={1} />
     </Link>

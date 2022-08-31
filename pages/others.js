@@ -1,14 +1,10 @@
 import {
   Container,
   Heading,
-  Box,
   SimpleGrid,
-  Button,
   Link,
   useColorModeValue,
 } from "@chakra-ui/react";
-import { ChevronRightIcon } from "@chakra-ui/icons";
-import NextLink from "next/link";
 import { OthersGridItem } from "../components/grid-item";
 import Layout from "../components/layout/article";
 import Section from "../components/Section";
@@ -41,7 +37,6 @@ const Others = () => {
                 target="_blank"
                 display="flex"
                 alignItems="center"
-                color={useColorModeValue("#319795", "#88ccca")}
                 my={1}
               >
                 <svg

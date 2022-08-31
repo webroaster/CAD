@@ -6,7 +6,6 @@ import {
   Badge,
   HStack,
 } from "@chakra-ui/react";
-import Head from "next/head";
 import Section from "../components/Section";
 import { WorkGridItem, GridItemStyle } from "../components/grid-item";
 
