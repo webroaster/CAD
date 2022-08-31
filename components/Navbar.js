@@ -20,18 +20,15 @@ import Theme from "../lib/theme";
 
 const LinkItem = ({ href, path, children }) => {
   const active = path === href;
-
+  const colorActive = useColorModeValue("#fff", "#000");
+  const colorUnActive = useColorModeValue("#000", "#fff");
   return (
     <NextLink href={href}>
       {/* 表示ページのリンクナビは背景変更 */}
       <Link
         p={2}
-        bg={active ? Theme.colors.glassTeal : "none"}
-        color={
-          active
-            ? useColorModeValue("#fff", "#000")
-            : useColorModeValue("#000", "#fff")
-        }
+        bg={active ? Theme.colors.glassTeal : undefined}
+        color={active ? colorActive : colorUnActive}
       >
         {children}
       </Link>
