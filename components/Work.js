@@ -11,6 +11,7 @@ import {
 } from "@chakra-ui/react";
 import { ChevronRightIcon, ExternalLinkIcon } from "@chakra-ui/icons";
 import Layout from "./layout/article";
+import Head from "next/head";
 
 const Title = ({ children }) => (
   <Box>
@@ -58,6 +59,9 @@ export const WorkItem = ({
   period,
 }) => (
   <Layout>
+    <Head>
+      <title>{title} | CAD</title>
+    </Head>
     <Container>
       <Title>
         {title} <Badge>{badge}</Badge>
