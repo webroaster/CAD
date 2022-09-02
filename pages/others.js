@@ -77,9 +77,9 @@ const Others = () => {
               title="Canoa coffee"
               thumbnail={thumbCanoaCoffee}
             >
-              自家焙煎珈琲豆販売
+              自家焙煎珈琲豆の販売
               <br />
-              自家焙煎の珈琲豆の販売をネットを始め、BARドルチェ等で販売。
+              ネットやBARドルチェ等で販売。
             </OthersGridItem>
           </Section>
         </SimpleGrid>

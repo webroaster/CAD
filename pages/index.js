@@ -1,9 +1,15 @@
-import { Container, Box, Heading, Button } from "@chakra-ui/react";
+import {
+  Container,
+  Box,
+  Heading,
+  Button,
+  Badge,
+  HStack,
+} from "@chakra-ui/react";
 import { ChevronRightIcon } from "@chakra-ui/icons";
 import Layout from "..//components/layout/article";
 import NextLink from "next/link";
 import Section from "../components/Section";
-import Paragraph from "../components/Paragraph";
 import MemberItem from "../components/MemberGrid";
 
 export default function Home() {
@@ -14,12 +20,21 @@ export default function Home() {
           <Heading as="h3" variant="section-title">
             Service
           </Heading>
-          <Paragraph>
+          <p>
             福岡を拠点に活動するフリーランスのデザイナーやWebエンジニアによるクリエイター事務所です。
             Web制作全般、デザイン、コーディング代行など、貴社のさまざまな問題解決に尽力します。
-            <br />
-            Planning / Design / Coding
-          </Paragraph>
+          </p>
+          <HStack mt={2}>
+            <Badge p={1} fontSize="14px">
+              Planning
+            </Badge>
+            <Badge p={1} fontSize="14px">
+              Design
+            </Badge>
+            <Badge p={1} fontSize="14px">
+              Coding
+            </Badge>
+          </HStack>
           <Box align="center" my={4}>
             <NextLink href="/works">
               <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
@@ -40,6 +55,14 @@ export default function Home() {
             url="https://aki-nishiguchi.com/"
           >
             Web Engineer
+          </MemberItem>
+
+          <MemberItem image="/images/auth/Shiho.webp" nameTitle="Shiho Tahara">
+            Designer
+          </MemberItem>
+
+          <MemberItem image="/images/auth/Keita.webp" nameTitle="Keita Kuroki">
+            Designer
           </MemberItem>
           <Box align="center" my={4}>
             <NextLink href="/massage">

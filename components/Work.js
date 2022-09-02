@@ -8,7 +8,6 @@ import {
   Container,
   List,
   ListItem,
-  useColorModeValue,
 } from "@chakra-ui/react";
 import { ChevronRightIcon, ExternalLinkIcon } from "@chakra-ui/icons";
 import Layout from "./layout/article";
@@ -68,12 +67,14 @@ export const WorkItem = ({
       </Heading>
       <p>{children}</p>
       <List my={4}>
-        <ListItem>
-          <Meta>Website</Meta>
-          <Link href={url} target="_blank">
-            {url} <ExternalLinkIcon mx="2px" />
-          </Link>
-        </ListItem>
+        {url ? (
+          <ListItem>
+            <Meta>Website</Meta>
+            <Link href={url} target="_blank">
+              {url} <ExternalLinkIcon mx="2px" />
+            </Link>
+          </ListItem>
+        ) : undefined}
         <ListItem>
           <Meta>Stack</Meta>
           <span>{stacks}</span>

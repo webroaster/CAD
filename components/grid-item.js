@@ -6,7 +6,7 @@ import {
   LinkBox,
   LinkOverlay,
   Link,
-  useColorModeValue,
+  Heading,
 } from "@chakra-ui/react";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
 import { Global } from "@emotion/react";
@@ -60,10 +60,12 @@ export const OthersGridItem = ({ children, path, title, thumbnail }) => (
       className="grid-item-thumbnail"
       placeholder="blur"
     />
-    <Text mt={2} fontSize={20}>
+    <Heading my={2} fontSize={20}>
       {title}
+    </Heading>
+    <Text fontSize={14} mb={2}>
+      {children}
     </Text>
-    <Text fontSize={14}>{children}</Text>
     <Link href={path} target="_blank">
       {path}
       <ExternalLinkIcon ml={1} />
@@ -79,9 +81,11 @@ export const GridItemStyle = () => (
 
         * {
           height: 100% !important;
+          width: 100% !important;
         }
         img {
           object-fit: cover;
+          width: 100%;
         }
       }
       .grid-item-thumbnail {

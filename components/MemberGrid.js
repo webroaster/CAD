@@ -2,7 +2,7 @@ import { Box, Heading, Link, Image, useColorModeValue } from "@chakra-ui/react";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
 
 const MemberItem = ({ children, image, nameTitle, url }) => (
-  <Box display="flex" alignItems="center" py={2}>
+  <Box display="flex" alignItems="center" py={2} mb={2}>
     <Box mr={6}>
       <Box
         overflow="hidden"
@@ -21,9 +21,11 @@ const MemberItem = ({ children, image, nameTitle, url }) => (
         {nameTitle}
       </Heading>
       <p>{children}</p>
-      <Link href={url} target="_blank">
-        {url} <ExternalLinkIcon ml={1} />
-      </Link>
+      {url ? (
+        <Link href={url} target="_blank">
+          {url} <ExternalLinkIcon ml={1} />
+        </Link>
+      ) : undefined}
     </Box>
   </Box>
 );

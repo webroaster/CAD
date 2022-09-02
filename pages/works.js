@@ -15,6 +15,8 @@ import thumbRyugaku from "../public/images/works/thumbRyugaku.webp";
 import thumbPhilippines from "../public/images/works/thumbPhilippines.webp";
 import thumbGamicome from "../public/images/works/thumbGamicome.webp";
 import thumbDressMaker from "../public/images/works/thumbDressMaker.webp";
+import thumbHibiki from "../public/images/works/hibiki_omote.webp";
+
 import Layout from "../components/layout/article";
 
 const Works = () => {
@@ -26,6 +28,8 @@ const Works = () => {
         </Heading>
         <Text mb={6}>
           過去の実績一覧です。WordPressでの実務が多く、会員登録機能のあるサイトやここの他にSSGの構築やアプリケーションのフロントエンドにも携わらせていただいております。
+          <br />
+          紙媒体のデザインや印刷代行も可能で、名刺やフライヤー等のご相談も承っております。
         </Text>
 
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
@@ -121,7 +125,7 @@ const Works = () => {
               title="DressMaker"
               thumbnail={thumbDressMaker}
             >
-              Dressmaker
+              人材募集サイト（求人サイト）
               <br />
               <HStack
                 colorScheme="teal"
@@ -133,6 +137,24 @@ const Works = () => {
                 <Badge>Planning</Badge>
                 <Badge>Design</Badge>
                 <Badge>Develop</Badge>
+              </HStack>
+            </WorkGridItem>
+          </Section>
+
+          <Section>
+            <WorkGridItem id="hibiki" title="HIBIKI" thumbnail={thumbHibiki}>
+              名刺作成
+              <br />
+              <HStack
+                colorScheme="teal"
+                fontSize="12px"
+                spacing={2}
+                justify="center"
+                mt={2}
+              >
+                <Badge>Planning</Badge>
+                <Badge>Design</Badge>
+                <Badge>Print</Badge>
               </HStack>
             </WorkGridItem>
           </Section>
