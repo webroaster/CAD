@@ -5,7 +5,7 @@ const Work = () => {
     <WorkItem
       title="Dressmaker"
       badge="2021"
-      category="人材募集サイト（求人サイトLP）"
+      category="人材募集サイト（求人サイト）"
       url="https://dress-maker.com/"
       stacks="webpack/ejs/Scss/WordPress/jQuery"
       img1="/images/works/thumbDressMaker.webp"
