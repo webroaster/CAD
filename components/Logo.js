@@ -1,8 +1,8 @@
-import Link from "next/link";
-// import Image from "next/image";
-import { Text, useColorModeValue } from "@chakra-ui/react";
-import { AtSignIcon } from "@chakra-ui/icons";
-import styled from "@emotion/styled";
+import Link from "next/link"
+import Image from "next/image"
+import { Text, useColorModeValue } from "@chakra-ui/react"
+import { AtSignIcon } from "@chakra-ui/icons"
+import styled from "@emotion/styled"
 
 const LogoBox = styled.span`
   font-weight: bold;
@@ -16,29 +16,27 @@ const LogoBox = styled.span`
   &:hover img {
     transform: rotate(20deg);
   }
-`;
+`
 
 const Logo = () => {
-  // const LogoImg = srcをここに;
+  const LogoImg = "/logo-3color.png"
 
   return (
-    <Link href="/">
+    <Link href='/'>
       <a>
         <LogoBox>
-          {/* <Image src={LogoImg} width={20} height={20} alt="Logo" /> */}
-          <AtSignIcon />
           <Text
             color={useColorModeValue("gray.900", "whiteAlpha.900")}
-            fontWeight="bold"
+            fontWeight='bold'
             ml={3}
-            fontFamily="M PLUS Rounded 1c"
+            fontFamily='M PLUS Rounded 1c'
           >
-            CAD
+            <Image src={LogoImg} width={45} height={25} alt />
           </Text>
         </LogoBox>
       </a>
     </Link>
-  );
-};
+  )
+}
 
-export default Logo;
+export default Logo
