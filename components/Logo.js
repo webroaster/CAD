@@ -1,7 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
 import { Text, useColorModeValue } from "@chakra-ui/react"
-import { AtSignIcon } from "@chakra-ui/icons"
 import styled from "@emotion/styled"
 
 const LogoBox = styled.span`
