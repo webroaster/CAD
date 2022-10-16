@@ -65,6 +65,13 @@ export default function Home() {
           <MemberItem image='/images/auth/Keita.webp' nameTitle='Keita Kuroki'>
             Designer
           </MemberItem>
+
+          <MemberItem
+            image='/images/auth/Shuma.webp'
+            nameTitle='Matsumoto Shuma'
+          >
+            CMO
+          </MemberItem>
           <Box align='center' my={4}>
             <NextLink href='/massage'>
               <Button rightIcon={<ChevronRightIcon />} colorScheme='teal'>
