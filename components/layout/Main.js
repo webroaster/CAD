@@ -75,7 +75,7 @@ const Main = ({ children, router }) => {
               mx={"auto"}
               width={"fit-content"}
             >
-              <Image src='/logo-yokonaga.png' width={300} height={50} alt />
+              <Image src='/logo-yokonaga.png' width={300} height={{base: '30px', md: '49px'}} alt />
             </Box>
           </Section>
         </Container>

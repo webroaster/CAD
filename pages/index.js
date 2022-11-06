@@ -68,7 +68,7 @@ export default function Home() {
 
           <MemberItem
             image='/images/auth/Shuma.webp'
-            nameTitle='Shuma Matsumoto'
+            nameTitle='Matsumoto Shuma'
           >
             CMO
           </MemberItem>
