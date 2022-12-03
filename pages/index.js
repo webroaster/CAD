@@ -73,9 +73,9 @@ export default function Home() {
             CMO
           </MemberItem>
           <Box align='center' my={4}>
-            <NextLink href='/massage'>
+            <NextLink href='/message'>
               <Button rightIcon={<ChevronRightIcon />} colorScheme='teal'>
-                Massage
+                Message
               </Button>
             </NextLink>
           </Box>

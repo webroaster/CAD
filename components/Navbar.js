@@ -1,5 +1,5 @@
-import Logo from "./Logo";
-import NextLink from "next/link";
+import Logo from "./Logo"
+import NextLink from "next/link"
 import {
   Container,
   Box,
@@ -13,15 +13,15 @@ import {
   IconButton,
   useColorModeValue,
   Stack,
-} from "@chakra-ui/react";
-import { HamburgerIcon } from "@chakra-ui/icons";
-import ThemeToggleButton from "./ThemeToggleButton";
-import Theme from "../lib/theme";
+} from "@chakra-ui/react"
+import { HamburgerIcon } from "@chakra-ui/icons"
+import ThemeToggleButton from "./ThemeToggleButton"
+import Theme from "../lib/theme"
 
 const LinkItem = ({ href, path, children }) => {
-  const active = path === href;
-  const colorActive = useColorModeValue("#fff", "#000");
-  const colorUnActive = useColorModeValue("#000", "#fff");
+  const active = path === href
+  const colorActive = useColorModeValue("#fff", "#000")
+  const colorUnActive = useColorModeValue("#000", "#fff")
   return (
     <NextLink href={href}>
       {/* 表示ページのリンクナビは背景変更 */}
@@ -33,32 +33,32 @@ const LinkItem = ({ href, path, children }) => {
         {children}
       </Link>
     </NextLink>
-  );
-};
+  )
+}
 
 const Navbar = (props) => {
-  const { path } = props;
+  const { path } = props
 
   return (
     <Box
-      position="fixed"
-      as="nav"
-      w="100%"
+      position='fixed'
+      as='nav'
+      w='100%'
       bg={useColorModeValue("#ffffff40", "#20202380")}
       style={{ backdropFilter: "blur(10px)" }}
       zIndex={1}
       {...props}
     >
       <Container
-        display="flex"
+        display='flex'
         p={2}
-        maxW="container.md"
-        wrap="wrap"
-        align="center"
-        justify="space-between"
+        maxW='container.md'
+        wrap='wrap'
+        align='center'
+        justify='space-between'
       >
-        <Flex align="center" mr={5}>
-          <Heading as="h1" size="lg" letterSpacing={"tighter"}>
+        <Flex align='center' mr={5}>
+          <Heading as='h1' size='lg' letterSpacing={"tighter"}>
             <Logo />
           </Heading>
         </Flex>
@@ -67,39 +67,39 @@ const Navbar = (props) => {
           direction={{ base: "column", md: "row" }}
           display={{ base: "none", md: "flex" }}
           width={{ base: "full", md: "auto" }}
-          alignItems="center"
+          alignItems='center'
           flexGrow={1}
           mt={{ base: 4, nmd: 0 }}
         >
-          <LinkItem href="/works" path={path}>
+          <LinkItem href='/works' path={path}>
             Works
           </LinkItem>
-          <LinkItem href="/others" path={path}>
+          <LinkItem href='/others' path={path}>
             Others
           </LinkItem>
-          <LinkItem href="/massage" path={path}>
-            Massage
+          <LinkItem href='/message' path={path}>
+            Message
           </LinkItem>
         </Stack>
 
-        <Box flex={1} align="right">
+        <Box flex={1} align='right'>
           <ThemeToggleButton />
           <Box ml={2} display={{ base: "inline-block", md: "none" }}>
             <Menu>
               <MenuButton
                 as={IconButton}
                 icon={<HamburgerIcon />}
-                variant="outline"
-                aria-label="Options"
+                variant='outline'
+                aria-label='Options'
               />
               <MenuList>
-                <NextLink href="/works" passHref>
+                <NextLink href='/works' passHref>
                   <MenuItem as={Link}>Works</MenuItem>
                 </NextLink>
-                <NextLink href="/others" passHref>
+                <NextLink href='/others' passHref>
                   <MenuItem as={Link}>Others</MenuItem>
                 </NextLink>
-                <NextLink href="/massage" passHref>
+                <NextLink href='/message' passHref>
                   <MenuItem as={Link}>Message</MenuItem>
                 </NextLink>
               </MenuList>
@@ -108,7 +108,7 @@ const Navbar = (props) => {
         </Box>
       </Container>
     </Box>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar
