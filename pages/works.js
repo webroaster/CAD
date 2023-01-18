@@ -160,7 +160,7 @@ const Works = () => {
             </WorkGridItem>
           </Section>
 
-          {/* <Section>
+          <Section>
             <WorkGridItem
               id='bingogame'
               title='BINGO Game'
@@ -179,7 +179,7 @@ const Works = () => {
                 <Badge>Develop</Badge>
               </HStack>
             </WorkGridItem>
-          </Section> */}
+          </Section>
         </SimpleGrid>
       </Container>
     </Layout>
