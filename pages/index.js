@@ -58,7 +58,10 @@ export default function Home() {
             Web Engineer
           </MemberItem>
 
-          <MemberItem image='/images/auth/Shiho.webp' nameTitle='Shiho Tahara'>
+          <MemberItem
+            image='/images/auth/Shiho.webp'
+            nameTitle='Shiho Nishiguchi'
+          >
             Designer
           </MemberItem>
 
