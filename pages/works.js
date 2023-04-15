@@ -17,6 +17,7 @@ import thumbGamicome from "../public/images/works/thumbGamicome.webp"
 import thumbDressMaker from "../public/images/works/thumbDressMaker.webp"
 import thumbHibiki from "../public/images/works/hibiki_omote.webp"
 import thumbBingo from "../public/images/works/bingogame1.webp"
+import thumbPokemon from "../public/images/works/pokemon1.webp"
 
 import Layout from "../components/layout/article"
 
@@ -167,6 +168,27 @@ const Works = () => {
               thumbnail={thumbBingo}
             >
               ビンゴゲーム
+              <br />
+              <HStack
+                colorScheme='teal'
+                fontSize='12px'
+                spacing={2}
+                justify='center'
+                mt={2}
+              >
+                <Badge>Design</Badge>
+                <Badge>Develop</Badge>
+              </HStack>
+            </WorkGridItem>
+          </Section>
+
+          <Section>
+            <WorkGridItem
+              id='pokemonquiz'
+              title='POKEMON QUIZ'
+              thumbnail={thumbPokemon}
+            >
+              ポケモンクイズ
               <br />
               <HStack
                 colorScheme='teal'
