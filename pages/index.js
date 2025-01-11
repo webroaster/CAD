@@ -1,11 +1,4 @@
-import {
-  Container,
-  Box,
-  Heading,
-  Button,
-  Badge,
-  HStack,
-} from "@chakra-ui/react"
+import { Container, Box, Heading, Button, Badge, HStack } from "@chakra-ui/react"
 import { ChevronRightIcon } from "@chakra-ui/icons"
 import Layout from "..//components/layout/article"
 import NextLink from "next/link"
@@ -21,10 +14,7 @@ export default function Home() {
             Service
           </Heading>
 
-          <p>
-            福岡を拠点に活動するフリーランスのデザイナーやWebエンジニアによるクリエイター事務所です。
-            Web制作全般、デザイン、コーディング代行など、貴社のさまざまな問題解決に尽力します。
-          </p>
+          <p>福岡を拠点に活動するフリーランスのデザイナーやWebエンジニアによるクリエイター事務所です。 Web制作全般、デザイン、コーディング代行など、貴社のさまざまな問題解決に尽力します。</p>
           <HStack mt={2}>
             <Badge p={1} fontSize='14px'>
               Planning
@@ -50,22 +40,11 @@ export default function Home() {
             Member
           </Heading>
 
-          <MemberItem
-            image='/images/auth/AkiNishiguchi.webp'
-            nameTitle='Aki Nishiguchi'
-            url='https://aki-nishiguchi.com/'
-          >
+          <MemberItem image='/images/auth/AkiNishiguchi.webp' nameTitle='Aki Nishiguchi' url='https://aki-nishiguchi.com/'>
             Web Engineer
           </MemberItem>
 
-          <MemberItem
-            image='/images/auth/Shiho.webp'
-            nameTitle='Shiho Nishiguchi'
-          >
-            Designer
-          </MemberItem>
-
-          <MemberItem image='/images/auth/Keita.webp' nameTitle='Keita Kuroki'>
+          <MemberItem image='/images/auth/Shiho.webp' nameTitle='Shiho Nishiguchi'>
             Designer
           </MemberItem>
 
